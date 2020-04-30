@@ -16,6 +16,7 @@
 
 		<app.runtime>4.2.2</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<proejct.site.deploy.url>D:\Mahesh\mule\agent\apps</proejct.site.deploy.url>
 	</properties>
 
 	<build>
@@ -26,7 +27,23 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<standaloneDeployment>
+					<muleHome>D:\Mahesh\mule\agent</muleHome>
+					<muleVersion>4.2.2</muleVersion>
+					</standaloneDeployment>
 				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+							<phase>deploy</phase>
+							<goals>
+								<goal>deploy</goal>
+							</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
