@@ -81,10 +81,10 @@
 </distributionManagement> -->
 
 <distributionManagement>
-  <snapshotRepository>
-    <id>snapshots</id>
-    <url>http://localhost:8090/nexus/content/repositories/snapshots</url>
-  </snapshotRepository>
+  <repository>
+    <id>mahesh-repository</id>
+    <url>http://localhost:8090/nexus/content/repositories/mahesh-repository</url>
+  </repository>
 </distributionManagement>
 
 
