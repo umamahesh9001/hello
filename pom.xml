@@ -82,13 +82,9 @@
 
 <distributionManagement>
   <repository>
-    <id>mahesh</id>
-    <url>http://localhost:8090/nexus/content/repositories/mahesh</url>
+    <id>releases</id>
+    <url>http://localhost:8090/nexus/content/repositories/releases</url>
   </repository>
-  <snapshotRepository>
-		<id>mahesh</id>
-		<url>http://localhost:8090/nexus/content/repositories/mahesh</url>
-	</snapshotRepository>
 </distributionManagement>
 
 
