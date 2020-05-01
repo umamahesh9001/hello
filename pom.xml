@@ -48,6 +48,20 @@
 		</plugins>
 	</build>
 
+
+
+<distributionManagement>
+	<repository>
+		<id>mahesh-repository</id>
+		<url>http://localhost:8081/repository/mahesh-repository/</url>
+	</repository>
+	<snapshotRepository>
+		<id>mahesh-repository</id>
+		<url>http://localhost:8081/repository/mahesh-repository/</url>
+	</snapshotRepository>
+</distributionManagement>
+
+
 	<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
