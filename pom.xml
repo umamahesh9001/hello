@@ -69,7 +69,7 @@
 
 
 
-<distributionManagement>
+<!-- <distributionManagement>
 	<repository>
 		<id>mahesh-repository</id>
 		<url>http://localhost:8081/repository/mahesh-repository/</url>
@@ -78,6 +78,13 @@
 		<id>mahesh-repository</id>
 		<url>http://localhost:8081/repository/mahesh-repository/</url>
 	</snapshotRepository>
+</distributionManagement> -->
+
+<distributionManagement>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://localhost:8090/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
 </distributionManagement>
 
 
