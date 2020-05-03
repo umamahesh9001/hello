@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="helloFlow" doc:id="c2982067-bf5b-4bc7-a359-f1094de14a5f" >
 		<http:listener doc:name="Listener" doc:id="fd2103b1-1efc-4b15-ad72-85eb9231ef50" config-ref="HTTP_Listener_config" path="/"/>
-		<logger level="INFO" doc:name="Logger" doc:id="e1af2df9-0aab-48d7-b2a9-7f72150db331" message="Super Hero !!!"/>
+		<logger level="INFO" doc:name="Logger" doc:id="e1af2df9-0aab-48d7-b2a9-7f72150db331" message="Super Hero "/>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="5b04ebb9-94dd-4c43-8b53-5228d38ec802" />
 	</flow>
 </mule>
